@@ -8,15 +8,17 @@ function fibonacciGenerator (n) {
     var b = 1;    
     
     if (n === 0) {
+        return output;
+    } else if (n === 1){
         output.push(a);
         return output;
-    } else if (n === 1) {
+    } else if (n === 2){
         output.push(a,b);
         return output;
-    } else {
+    } else if (n >= 3){
         output.push(a,b);
 
-        for (let i = 2; i <= n; i++){
+        for (let i = 3; i <= n; i++){
         var c = a + b;
         output.push(c);
         a = b;
