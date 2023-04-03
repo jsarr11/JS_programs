@@ -1,4 +1,4 @@
-function whosPaying(names) {
+function whosPaying() {
     var nameList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
     
     var luckyOne = Math.floor((Math.random()) * nameList.length);
